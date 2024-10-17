@@ -1,6 +1,6 @@
 <?php
 class connection {
-    private $servername = "localhost";
+    private $host = "localhost";
     private $username = "root";
     private $password = "";
     private $dbname = "tugas2";
@@ -8,7 +8,7 @@ class connection {
 
     public function __construct()
     {
-        $this->db = new mysqli($this->servername, $this->username, $this->password, $this->dbname);
+        $this->db = new mysqli($this->host, $this->username, $this->password, $this->dbname);
         return $this->db;
     }
     
@@ -16,4 +16,6 @@ class connection {
         return;
     }
 }
+
+$database = new connection();
 ?>
