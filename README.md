@@ -88,7 +88,7 @@ $permohonan=$izin->getDosen('permohonan_izin');
 $surat=$tugas->getDosen('surat_tugas');
 ?>
 ```
-<b>Penjelasan</b><br>
+<b align="center">Penjelasan :</b><br>
 Pada langkah ini terdapat sebuah class baru yang bernama `surat_tugas` dimana surat tugas itu extend dari class `connection`, Fungsi class `surat_tugas` ini sendiri yaitu mengambil data yang ada pada tabel `surat_tugas` di database. fungsi ini menggunakaan method dari `getDosen` yang berada pada class `connection`.
 
 
@@ -159,8 +159,7 @@ Selain class `surat_tugas` terdapat juga class `permohonan_izin` yang merupakan 
         </table>
     </div>
 ```
-<b>Penjelasan : </b><br>
-
+<b align="center">Penjelasan :</b><br>
 Tabel tersebut terbagi menjadi 2 role, satu role untuk Administrator
 dan satu role lagi untuk Dosen. Potongan program ini terletak pada bagian bawah dari metode 
 Inheritance dan Polymorphism yang sebelumnya dijelaskan. Untuk menampilkan isi dari tabelnya dapat digunakan 
@@ -229,6 +228,7 @@ Selain itu terdapat juga tabel data yang berisi permohonan izin dengan kode prog
         </table>
     </div>
 ```
+<b align="center">Penjelasan :</b><br>
 Tabel ini dibagi juga menjadi 2 role yaitu role untuk akses Administrator dan akses Dosen. Program ini juga terletak pada bagian bawah inheritance dan Polymorphism. Untuk menampilkan isinya digunakan perintah foreach yang berfungsi untuk mengambil data yang sebelumnya sudah diproses melalui method pada class Inheritance dari connection yang dimana data tersebut disimpan dalam `$permohonan` yang kemudian akan dicetak sebagai `$row`.
 
 setiap data yang ada pada `$permohonan` ini akan diambil sesuai dengan kebutuhan tabel seperti `Nama Dosen`, `NIP`, `Pangkat Jabatan`, `Jabatan`, dan `Unit Kerja`. Pada role Administrator tabel yang diberikan cukup rinci jika dibandingkan dengan tabel untuk role dosen yang hanya berisi `Nama Dosen`, `NIP`, dan `Jabatan`.
@@ -347,7 +347,7 @@ Membuat tampilan untuk menampilkan tabel data
     </script>
 </html>
 ```
-
+<b align="center">Penjelasan :</b><br>
 Program diatas menunjukkan bahwa class navbar berfungsi untuk membuat `navbar` yang dimana perintah tersebut dipanggil berdasarkan perintah yang tersedia pada bootstrap.
 
 Pada bagian bawah `Body` terdapat tag `<script>` yang berisi untuk menghide sebuah tabel apabila pilihannya tidak dipilih, contohnya dropdown surat tugas yang berisi Surat Tugas (Administrator) dan Surat Tugas (Dosen).Isi tabel ini tidak akan muncul apabila pengguna tidak memilih salah satu dari dropdown ini. selain itu ada juga fungsi untuk toggle theme (Mengubah Tema) untuk button toggle mode.
@@ -380,8 +380,8 @@ class connection {
 $database = new connection();
 ?>
 ```
-Index
 
+Index
 ```html
 <?php
 // Menghubungkan file koneksi ke dalam index
