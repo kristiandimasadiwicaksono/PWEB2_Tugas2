@@ -106,7 +106,7 @@ $surat=$tugas->getDosen('surat_tugas');
         <!-- Kalimat pada tampilan awal halaman -->
         <div class="position-absolute top-50 start-50 translate-middle text-center" id="welcomeMessage">
             <h2>Selamat Datang!</h2>
-            <p>Harap menekan salah satu tombol diatas untuk mengakses.</p>
+            <p>Harap menekan salah satu tombol diatas untuk menampilkan data.</p>
         </div>
     </div>
     <!-- Tampilan tabel surat tugas untuk role administrator -->
@@ -166,6 +166,7 @@ $surat=$tugas->getDosen('surat_tugas');
                 <?php }?>
             </tbody>
         </table>
+        <a class="kembali btn btn-primary" href="index.php" role="button">Kembali</a>
     </div>
     <!-- Tampilan tabel permohonan izin untuk role administrator -->
     <div class="container" id="adminIzin" style="margin-top: 20px; display: none;">
@@ -194,10 +195,11 @@ $surat=$tugas->getDosen('surat_tugas');
                 <?php } ?>
             </tbody>
         </table>
+        <a class="kembali btn btn-primary" href="index.php" role="button">Kembali</a>
     </div>
     <!-- Tampilan tabel permohonan izin untuk role dosen -->
     <div class="container" id="dosenIzin" style="margin-top: 20px; display: none;">
-        <h1 class="text-center">Permohonan Izin(Dosen)</h1>
+        <h1 class="text-center">Permohonan Izin (Dosen)</h1>
         <table class="table mt-5" style="text-align: center ;">
             <thead>
                 <tr>
@@ -219,6 +221,7 @@ $surat=$tugas->getDosen('surat_tugas');
                 <?php }?>
             </tbody>
         </table>
+        <a class="kembali btn btn-primary" href="index.php" role="button">Kembali</a>
     </div>
 </body>
 <!-- Fungsi js untuk menghilangkan tampilan jika tidak ditekan tombolnya -->
